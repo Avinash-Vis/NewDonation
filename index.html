@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Donation</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    
+</head>
+<body>
+    <div class="container">
+        <header>Add New Donation</header>
+
+        <div class="progress-bar">
+            <div class="step">
+                <p>Personal</p>
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Seva</p>
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Payment</p>
+                <div class="bullet">
+                    <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+
+        </div>
+
+        <div class="form-outer">
+            <form action="#">
+
+                <div class="page slidepage">
+                    <div class="title">Personal Details:</div>
+                    <div class="field">
+                        <div class="label">Receipt Number</div>
+                        <input type="number" name="receiptno" id="receiptno">
+                    </div>
+                    <div class="field">
+                        <div class="label">Receipt Date</div>
+                        <input type="date" name="receiptdate" id="receiptdate">
+                    </div>
+                    <div class="field">
+                        <div class="label">Donor Id</div>
+                        <input type="number" name="donorid" id="donorid">
+                    </div>
+                    <div class="field">
+                        <div class="label">Donor Name</div>
+                        <input type="text" name="donorname" id="donorname">
+                    </div>
+                    <div class="field">
+                        <div class="label">Enrolled By</div>
+                        <select name="enrolledby" id="enrolledby">
+                            <option>ABRD</option>
+                            <option>YDRD</option>
+                            <option>PRND</option>
+                            <option>JTMD</option>
+                        </select>
+                    </div>
+                    <div class="field nextBtn">
+                        <button>Next</button>
+                    </div>
+                </div>
+
+
+                <div class="page">
+                    <div class="title">Seva Details:</div>
+                    <div class="field">
+                        <div class="label">Amount</div>
+                        <input type="number" name="amount" id="amount">
+                    </div>
+                    <div class="field">
+                        <div class="label">Seva Category</div>
+                        <select name="sevacategory" id="sevacategory">
+                            <option>Annadanam</option>
+                            <option>General Donation</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Seva Sub Category</div>
+                        <select name="sevasubcategory" id="sevasubcategory">
+                            <option>Subhojanam</option>
+                            <option>Deepotsava</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Seva Code</div>
+                        <select name="sevacode" id="sevacode">
+                            <option>ANDG</option>
+                            <option>DEEP</option>
+                        </select>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-1 prev">Previous</button>
+                        <button class="next-1 next">Next</button>
+                    </div>
+                </div>
+
+
+                <div class="page">
+                    <div class="title">Payment Details:</div>
+                    <div class="field">
+                        <div class="label">Payment Type</div>
+                        <select name="paymenttype" id="paymenttype">
+                            <option>Cash</option>
+                            <option>Card</option>
+                            <option>Cheque</option>
+                            <option>Online</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Card Number</div>
+                        <input type="number" name="cardnumber" id="cardnumber">
+                    </div>
+                    <div class="field">
+                        <div class="label">Cheque Number</div>
+                        <input type="text" name="chequeno" id="chequeno">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-2 prev">Previous</button>
+                        <button class="Submit">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>
